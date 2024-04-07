@@ -1,4 +1,4 @@
 streamlit_option_menu 
 plotly
-pandas as pd
+pandas
 streamlit_shadcn_ui 
