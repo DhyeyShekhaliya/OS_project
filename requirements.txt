@@ -1,0 +1,4 @@
+streamlit_option_menu 
+plotly
+pandas as pd
+streamlit_shadcn_ui 
