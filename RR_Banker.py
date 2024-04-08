@@ -367,18 +367,18 @@ def main():
 
        st.title("Most Recently Used (MRU) Page Replacement Algorithm")
 
-    frames = st.number_input("Number of Frames:", min_value=1, step=1)
-    references = st.number_input("Number of References:", min_value=1, step=1)
-
-    reference_string = []
-    for i in range(references):
-        reference = st.number_input(f"Reference String {i+1}:", step=1)
-        reference_string.append(reference)
-
-    if st.button("Simulate"):
-        fault_count, hit_count = mru_page_replacement(reference_string, frames)
-        st.write(f"Total Page Faults: {fault_count}")
-        st.write(f"Total Page Hits: {hit_count}")
+       frames = st.number_input("Number of Frames:", min_value=1, step=1)
+       references = st.number_input("Number of References:", min_value=1, step=1)
+    
+       reference_string = []
+       for i in range(references):
+            reference = st.number_input(f"Reference String {i+1}:", step=1)
+            reference_string.append(reference)
+    
+       if st.button("Simulate"):
+            fault_count, hit_count = mru_page_replacement(reference_string, frames)
+            st.write(f"Total Page Faults: {fault_count}")
+            st.write(f"Total Page Hits: {hit_count}")
         
 def plot_gantt_chart(gantt_chart):
     df = pd.DataFrame(gantt_chart, columns=['Process', 'Start', 'End'])
