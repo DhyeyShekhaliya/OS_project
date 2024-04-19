@@ -14,7 +14,7 @@ class Process:
         self.FT = 0
         self.TAT = 0
         
-def SCAN(arr, head, direction, disk_size):
+def SCAN(arr, head, direction):
     seek_count = 0
     distance, cur_track = 0, 0
     left = []
